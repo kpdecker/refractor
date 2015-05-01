@@ -1,0 +1,10 @@
+{
+  "name": "refractor",
+  "version": "0.0.1",
+  "description": "Image optimization AB tool",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Decker <kpdecker@gmail.com> (http://incaseofstairs.com)",
+  "license": "MIT"
+}
