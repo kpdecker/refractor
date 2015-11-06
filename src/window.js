@@ -2,6 +2,8 @@ import BrowserWindow from 'browser-window';
 
 export default class Window {
   constructor(file) {
+    this.file = file;
+
     this.window = new BrowserWindow({width: 800, height: 600});
     this.window.loadUrl(`file://${__dirname}/index.html`);
 
