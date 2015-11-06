@@ -12,3 +12,12 @@ before_script:
 cache:
   directories:
     - node_modules
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+env:
+  - CXX=g++-4.8
