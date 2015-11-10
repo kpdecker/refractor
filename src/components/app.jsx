@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 import css from './app.styl';
 
-export class App extends React.Component {
+class App extends React.Component {
   static propTypes = {
     files: React.PropTypes.object
   }
@@ -29,5 +29,9 @@ export class App extends React.Component {
     );
   }
 }
+
+
+// Hack around https://github.com/babel/babel/issues/2868
+export {App};
 
 export default connect((state) => state)(App);
