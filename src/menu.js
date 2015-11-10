@@ -71,7 +71,7 @@ export function buildMenu() {
   ];
 
   /* istanbul ignore next */
-  if (process.env.NODE_ENV === 'production') { // eslint-disable-line no-process-env
+  if (process.env.NODE_ENV !== 'production') { // eslint-disable-line no-process-env
     template.push({
       label: 'View',
       submenu: [
