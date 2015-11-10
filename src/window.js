@@ -1,4 +1,5 @@
 import BrowserWindow from 'browser-window';
+import {loadOriginal} from './state/files';
 
 export default class Window {
   constructor(file) {
@@ -8,7 +9,7 @@ export default class Window {
     this.window.loadUrl(`file://${__dirname}/index.html`);
 
     this.window.webContents.on('did-finish-load', () => {
-      this.window.webContents.send('action', {type: 'LOAD_FILE', payload: {file}});
+      this.window.webContents.send('action', loadOriginal(file));
     });
   }
 

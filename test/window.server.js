@@ -13,7 +13,7 @@ describe('window class', function() {
     window.window.webContents.emit('did-finish-load');
     expect(window.window.webContents.send)
         .to.have.been.calledOnce
-        .to.have.been.calledWith('action', {'type': 'LOAD_FILE', payload: {file: 'file!'}});
+        .to.have.been.calledWith('action', {'type': 'LOAD_ORIGINAL', payload: {file: 'file!'}});
 
     window.close();
     expect(window.window).to.not.exist;
