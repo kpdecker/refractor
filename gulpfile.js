@@ -2,13 +2,8 @@
 var Gulp = require('gulp'),
     Linoleum = require('linoleum');
 
-require('linoleum/tasks/clean');
-require('linoleum/tasks/lint');
-require('linoleum/tasks/babel');
-require('linoleum/tasks/webpack');
-require('linoleum/tasks/test');
-require('linoleum/tasks/cover');
-require('linoleum/tasks/karma');
+require('linoleum-electron');
+require('linoleum-webpack');
 
 Gulp.task('build:static', function() {
   return Gulp.src('static/**')

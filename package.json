@@ -12,7 +12,8 @@
     "chai": "^3.4.0",
     "electron-prebuilt": "^0.31.0",
     "gulp": "^3.9.0",
-    "linoleum": "github:projectrecall/linoleum",
+    "linoleum": "github:kpdecker/linoleum",
+    "linoleum-electron": "github:kpdecker/linoleum-electron",
     "react-addons-test-utils": "^0.14.2",
     "react-shallow-testutils": "^0.6.0",
     "sinon": "^1.17.2",
@@ -27,8 +28,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "recall",
-      "recall/react"
+      "linoleum",
+      "linoleum/react"
     ],
     "root": true
   }
